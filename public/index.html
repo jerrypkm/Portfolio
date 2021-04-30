@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+    <link rel="stylesheet" href="src/mobile-style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+    <header id="main-header">
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-circle-notch"></i> GC
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-align-right text-light"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#main-header"
+                  >HOME <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-project">WORK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/profile.pdf">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container text-left header-ctr">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-sm-12 header-text">
+            <h2>
+              #
+              <a
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "Soy intuitivo", "Soy autodidacta", "Soy programador" ]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h2>
+
+            <h1>¡El límite es el cielo! Soy Gerardo Chapa</h1>
+            <h5>
+              Ingeniero Mecatrónico con gran experiencia en diseño web, e-comerce y desarrollo de software.
+            </h5>
+
+            <div class="text-left">
+              <a
+                class="button btn btn-light px-5 py-1.5 sayhi"
+                href="mailto:gchapadg@icloud.com?Subject=Hola%20Gerardo!"
+                target="_top"
+                >¡Salúdame!</a
+              >
+            </div>
+            <br />
+          </div>
+          <div class="col-md-5 col-sm-12 main-img h-25">
+            <img src="assets/mac.png" alt="mac" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-screen">
+      <section class="section-1">
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              Cuida tus pensamientos, porque se convertirán en tus palabras.</br> 
+              Cuida tus palabras, porque se convertirán en tus actos.</br>
+              Cuida tus actos, porque se convertirán en tus hábitos.</br>
+              Cuida tus hábitos, porque se convertirán en tu destino.</br>
+            </p>
+            <p class="text-right">- Mahatma Gandhi</p>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              Si he realizado descubrimientos invaluables ha sido más 
+              por tener paciencia que cualquier otro talento.
+            </p>
+            <p class="text-right">- Sir Isaac Newton</p>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              Las ligas y los tratados están bien entre los políticos. Pero no pueden
+              producir la paz, a menos que la gente misma sea quien la desee. Nosotros tratamos 
+              de imbuir en la próxima generación el espíritu de hermandad, camaradería y amistad, 
+              que es la verdadera fase para la paz del mundo.
+            </p>
+            <p class="text-right">- Robert Banden-Powell</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-about" class="section-2">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="pray">
+                <img src="assets/my-pic.jpg" alt="my-pic" />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="panel text-left">
+                <h2>Acerca de mí</h2>
+                <h3>Gerardo Chapa Díaz González</h3>
+                <h4>Ingeniero Mecatrónico de la Universidad Nacional Autónoma de México</h4>
+                <p>
+                  Soy un apasionado ingeniero que disfruta de los retos
+                  y las nuevas experiencias, disfruto mucho aprender y aplicar
+                  mis conocimientos para ayudar a los demás. Actualmente me dedico
+                  al empendimiento en desarrollo web, e-commerce y desarrollo de software.
+                </p>
+                <h4>SKILLS</h4>
+                <p>
+                  C#, Javascript, C, HTML5, CSS3,<br />
+                  Nodejs, WordPress, PHP, Firebase, Shopify,<br />
+                  Git, Github, VSCode, MercadoPago Development, Adobe Software
+                </p>
+
+                <h6>Me puedes encontrar en mis redes como, <b>@gchapadg</b></h6>
+                <br />
+
+                <a class="btn btn-light px-3 py-1.5" href="assets/profile.pdf"
+                  >Descargar CV</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-3 container-fluid p-0">
+        <div class="container-fluid text-center">
+          <div
+            class="numbers d-flex flex-md-row flex-wrap justify-content-center"
+          >
+            <div class="rect">
+              <h1>530</h1>
+              <a href="https://linkedin.com/in/iampavangandhi/"
+                ><p><i class="fab fa-facebook"></i> Facebook</p></a
+              >
+            </div>
+
+            <div class="rect">
+              <h1>153</h1>
+              <a href="https://instagram.com/gchapadg/" target="_blank"
+                ><p><i class="fab fa-instagram"></i> Instagram</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-project" class="section-4">
+        <div class="container text-center">
+          <h1 class="text-dark">Proyectos en los que he participado</h1>
+        </div>
+        <div class="cards">
+          <div class="d-flex flex-md-row flex-wrap justify-content-center">
+            <div
+              class="card mr-2 d-inline-block shadow-lg"
+              style="width: 18rem"
+            >
+              <img src="assets/background2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Mi Portfolio</h4>
+                <p class="card-text">
+                  Creacción de mi portfolio utilizando tecnología
+                  HTML5, CSS3, BOOTSTRAP v4.3 y JavaScript.
+                </p>
+              </div>
+              <div class="card-body">
+                <a
+                  href="https://github.com/iampavangandhi/iampavangandhi.github.io"
+                  target="_blank"
+                  class="card-link"
+                  >Link</a
+                >
+              </div>
+            </div>
+            <div
+              class="card mr-2 d-inline-block shadow-lg"
+              style="width: 18rem"
+            >
+              <img src="assets/background3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">UniQuiz WebApp</h4>
+                <p class="card-text">
+                  Diseño UI, autentificación de usuarios y comunicación con No-SQL Database.
+                  Construcción del sitio utilziando tecnología HTML5, CSS3, Boostrap v4.3 y JavaScript
+                </p>
+              </div>
+              <div class="card-body">
+                <a
+                  href="https://quizapp-39c91.web.app/"
+                  target="_blank"
+                  class="card-link"
+                  >Link</a
+                >
+              </div>
+            </div>
+            <div
+            class="card mr-2 d-inline-block shadow-lg"
+            style="width: 18rem"
+          >
+            <img src="assets/background4.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="card-title">FloryTips</h4>
+              <p class="card-text">
+                Diseño web con WordPress, Elementor y PHP. Control de productos, precios
+                y administración de inventarios utilizando ccv, marketing digital y 
+                foto de producto optimizada.
+              </p>
+            </div>
+            <div class="card-body">
+              <a
+                href="https://florytips.com/"
+                target="_blank"
+                class="card-link"
+                >Link</a
+              >
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-contact" class="section-5">
+        <div class="contact">
+          <div class="form-container">
+            <h2>Contáctame</h2>
+            <form
+              method="POST"
+              action="https://formspree.io/pavangandhi100@gmail.com"
+            >
+              <div class="input-field">
+                <input type="text" name="name" required="" />
+                <label>Nombre*</label>
+              </div>
+              <div class="input-field">
+                <input type="email" name="email" required="" />
+                <label>Email*</label>
+              </div>
+              <div class="input-field">
+                <textarea name="message" rows="5" required=""></textarea>
+                <label>Mensaje*</label>
+              </div>
+              <input type="submit" name="" value="Enviar mensaje" class="btn" />
+            </form>
+          </div>
+        </div>
+        <div class="quote">
+          <h4>
+            “Los algoritmos deben ser escritos para que los lean las personas, 
+            y sólo incidentalmente, para que lo ejecuten las máquinas” –  
+            <br />
+            <br /><b>- Alguien en internet </b>
+          </h4>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-fluid p-0">
+        <div class="row text-left">
+          <div class="col-md-9">
+            <h4 class="text-light">Gracias</h4>
+            <p class="text-muted">¡Todos podemos mejorar! Envíame tus sugerencias a:</p>
+            <p class="gmail"> gchapadg@icloud.com</p>
+          </div>
+          <div class="col-md-3 follow">
+            <h4 class="text-light">Spigueme en mis redes</h4>
+            <p class="text-muted">No perdamos el contacto</p>
+            <div class="column text-light">
+              <!-- <a href="https://www.linkedin.com/in/iampavangandhi/"
+                ><i class="fab fa-linkedin"></i
+              ></a> -->
+              <a href="https://www.facebook.com/iampavangandhi" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/iampavangandhi/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-5 text-center">
+        <p class="pt-2 text-muted">
+          Copyright ©2019 All rights reserved | This site is
+          <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by
+          <a class="sp" href="https://www.github.com/iampavangandhi"
+            ><span> Gerardo Chapa </span></a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
